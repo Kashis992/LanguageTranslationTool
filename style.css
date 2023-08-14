@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'roboto',sans-serif;
+
+}
+
+body{
+    background: url('smart-city.png') no-repeat ;
+    background-size: cover;
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 900px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 20px black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.translator_property{
+    border: 1px solid rgb(16, 16, 16);
+}
+.translator_property .num_items{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid rgb(188, 184, 184);
+    padding: 0 20px;
+}
+.translator_property .num_items li select{
+    outline: none;
+    border-style: none;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(69, 68, 68);
+    cursor: pointer;
+    transition: all .3s ease-out;
+   
+}
+.translator_property .num_items li select:hover{
+    color:#1c0f0f;
+}
+.bx-transfer{
+    font-size: 22px;
+    cursor: pointer;
+    color:  rgb(67, 66, 66);
+    transition: all .3s ease-out;
+}
+.bx-transfer:hover{
+    color: #211a1a;
+}
+.write_box{
+    display: flex;
+}
+.property_from , .property_trans{
+    width: 100%;
+    position: relative;
+}
+.write_box textarea{
+    height: 250px;
+    width: 100%;
+    outline: none;
+    border-style: none;
+    resize: none;
+    padding:10px 20px;
+    font-size: 20px;
+    color: #343030;
+    position: relative;
+}
+.write_box textarea:nth-child(1){
+    border-right: 1px solid rgb(63, 59, 59);
+}
+.write_box .icons{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.icons .bx{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background:#ddd;
+    line-height: 35px;
+    font-size: 18px;
+    color: #111;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+.icons .bx:hover{
+    background: #464444;
+    color:beige;
+}
+.code_length{
+    font-size: 18px;
+    color: #343030 ;
+}
